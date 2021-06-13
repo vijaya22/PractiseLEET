@@ -22,8 +22,11 @@ var shortestCompletingWord = function (licensePlate, words) {
     let result  = words.filter(word=>{
       return  a.every(lett=> word.includes(lett) && licensePlateLetterMap.get(lett)<= countLetter(lett,word))
     })
-    result = result.sort((r1,r2)=>r1.length-r2.length);
-    return result[0];   
+    if(result.length){
+        result = result.sort((r1,r2)=>r1.length-r2.length);
+        return result[0];
+    }
+    else return "";  
 };
 /**
  * @param {string} letter
@@ -49,4 +52,7 @@ assert(shortestCompletingWord("1s3 PSt",[])=="");
 
 // both licensePlate & word Array are blank
 assert(shortestCompletingWord("",[]) == "");
+
+// if no completing word is found
+assert(shortestCompletingWord("abc",["dcg","dag"])=="");
 
