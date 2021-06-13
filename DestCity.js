@@ -23,6 +23,7 @@ console.log('x:::',x)
 
 // blank array
 assert(destCity([]) == "");
+assert(destCity([[]])=="");
 
 // no city exists
 assert(destCity([["A","B"],["B","C"],["C","A"]]) == "");
