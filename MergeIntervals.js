@@ -9,7 +9,7 @@ var merge = function(intervals) {
     for(let i=1;i<intervals.length;i++){
         if(intervals[i][0]<=result[result.length-1][1]){   
             const x =  result.pop();
-            result.push([Math.min(x[0],intervals[i][0]),Math.max(x[1],intervals[i][1])])
+            result.push([x[0],Math.max(x[1],intervals[i][1])])
         }
         else result.push(intervals[i])
     }
