@@ -11,6 +11,8 @@
  */
 var middleNode = function(head) {
   // slow - fast pointer
+  // time complexity - O(n)
+  // space complexity - O(1)
     let fast = head;
     let slow = head;
     while(fast !=null && fast.next != null){
