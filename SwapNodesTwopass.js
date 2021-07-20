@@ -14,7 +14,7 @@ var swapNodes = function(head, k) {
     // find kth node from beginning
     // find kth node from end
     // swap
-    // two pass
+    // two pass / one pass--- most probably one pass
    
     
     let dummy = new ListNode(0);
