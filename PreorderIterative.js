@@ -13,7 +13,7 @@
 var preorder = function(root) {
     // time complexity = O(n)
     // space complexity = O(n)
-    if(!root) return null;
+    if(!root) return [];
     let stack = [];
     let output = [];
     stack.push(root);
