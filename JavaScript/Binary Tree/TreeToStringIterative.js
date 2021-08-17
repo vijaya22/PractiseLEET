@@ -37,3 +37,4 @@ var tree2str = function(root) {
         }
     }
     return res.substring(1, res.length-1);
+}

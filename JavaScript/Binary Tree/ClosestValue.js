@@ -12,7 +12,7 @@
  * @return {number}
  */
 
-var  = function(root, target) {
+var  closestValue = function(root, target) {
     // time complexity - O(n)
     // space complexity - O(n)
     let inorderArr = [];
