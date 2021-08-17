@@ -11,6 +11,7 @@
  * @return {number[][]}
  */
 var  levelOrder = function(root) {
+    // levelOrder traversal of a tree
     // bfs using a queue
     // time complexity - O(n)
     // space complaxity - O(n)
