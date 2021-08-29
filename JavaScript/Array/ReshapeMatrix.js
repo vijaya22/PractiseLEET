@@ -5,6 +5,8 @@
  * @return {number[][]}
  */
 function matrixReshape(mat, r, c) {
+    // time complexity - O(r*c)
+    // space complexity - O(r*c)
     let R = mat.length;
     let C = mat[0].length;
     if (R * C != r * c) return mat;
