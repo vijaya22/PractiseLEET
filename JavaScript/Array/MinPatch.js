@@ -10,7 +10,7 @@ function minPatches(nums, n){
     let patches = 0;
     let i = 0;
     let miss = 1;
-    while(i<nums.length){
+    while(miss<=n){
         if(i<n && nums[i]<=miss){
             miss += nums[i];
             i++;
