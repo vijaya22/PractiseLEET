@@ -12,7 +12,6 @@ var compress = function(chars) {
     
     for(let i=0; i<chars.length; i++){
         if(currChar == chars[i]){
-            console.log('if:')
             currCount ++;
         }
         else{
