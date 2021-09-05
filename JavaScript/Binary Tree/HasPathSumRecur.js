@@ -12,6 +12,10 @@
  * @return {boolean}
  */
 var hasPathSum = function(root, targetSum) {
+    // recursion
+    // time complexity - O(n)
+    // space complexity  - O(log n)
+
     if(root == null) return false;
     
     targetSum = targetSum -  root.val;
