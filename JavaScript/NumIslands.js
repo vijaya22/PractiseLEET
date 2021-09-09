@@ -3,6 +3,9 @@
  * @return {number}
  */
 var numIslands = function(grid) {
+    // dfs
+    // time complexity - O(m*n)
+    // space complexity - O(m*n)
     let count = 0;
     let rows = grid.length;
     let columns = grid[0].length;
