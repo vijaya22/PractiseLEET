@@ -13,7 +13,8 @@ var isPalindrome = function(head) {
     // first approach 
     // copy linked list to an array
     // check if its palindrome or not
-    // time com
+    // time complexity - O(n)
+    // space complexity - O(n)
     if(!head) return false;
     let copyArr = [];
     let copyHead = head;
